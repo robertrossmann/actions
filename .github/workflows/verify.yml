@@ -1,0 +1,15 @@
+name: verify
+on: [push, pull_request]
+
+env:
+  CI: 'true'
+
+jobs:
+  verify:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+      - run: go build ./...
+      - run: gofmt -d -l .
+      - run: go vet github.com/robertrossmann/actions/toolkit
+      - run: go test -v ./...

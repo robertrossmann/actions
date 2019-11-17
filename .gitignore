@@ -1,0 +1,21 @@
+# Local configuration
+.bashrc
+.zshrc
+local.mk
+
+# Garbage
+*.log
+*~
+*#
+.DS_Store
+.nyc_output
+.eslintcache
+
+# IDE stuff
+.netbeans
+nbproject
+.idea
+.node_history
+*.sublime-*
+*.atom-*
+.tern-*

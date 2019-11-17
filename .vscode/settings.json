@@ -1,0 +1,11 @@
+{
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "triggerTaskOnSave.on": true,
+  "triggerTaskOnSave.tasks": {
+    "make:test": [
+      "**/*_test.go"
+    ]
+  }
+}
